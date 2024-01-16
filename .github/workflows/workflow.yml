@@ -27,6 +27,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2 
 
-      - name: si job1 echou
+      - name: si job1 echou 
         run: |
             echo "le job1 a 2choué"
