@@ -1,0 +1,18 @@
+name: Workflow_sequentiel
+
+on : 
+  [push]
+env:
+    VAR1 : "Bonjour !"
+  
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 
+
+      - name: Afficher la valeur de VAR1
+        run: |
+          echo (VAR1)
