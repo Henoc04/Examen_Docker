@@ -5,7 +5,7 @@ on :
     tags:
         - 'release*'
 env:
-    VAR1 : Bonjour !
+    VAR1 : Bonjour ! 
   
 jobs:
   job1:
