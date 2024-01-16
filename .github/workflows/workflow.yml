@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "$VAR1"
 
-  job2:
+  job2: 
     needs: job1
     runs-on: ubuntu-latest
     if: failure()
