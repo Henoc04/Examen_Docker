@@ -3,7 +3,7 @@ name: Workflow_sequentiel
 on : 
   push:
     tags:
-        - 'release'
+        - 'release1*'
 env:
     VAR1 : Bonjour ! 
   
@@ -20,7 +20,7 @@ jobs:
           echo "$VAR1"
 
   job2: 
-    needs: job1
+    needs: job1 
     runs-on: ubuntu-latest
     if: failure()
     steps:
