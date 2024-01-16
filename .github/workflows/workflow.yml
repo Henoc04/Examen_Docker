@@ -1,7 +1,9 @@
 name: Workflow_sequentiel
 
 on : 
-  [push]
+  push:
+    tags:
+        -release*
 env:
     VAR1 : Bonjour !
   
